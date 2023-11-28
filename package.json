@@ -2,13 +2,12 @@
   "name": "inm320-week8",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "lite-server --baserDir=\"public\""
   },
-  "keywords": [],
-  "author": "",
+  "author": "Motunrayo Ojuolape abiona",
   "license": "ISC",
+  "private":true,
   "devDependencies": {
     "lite-server": "^2.6.1"
   }

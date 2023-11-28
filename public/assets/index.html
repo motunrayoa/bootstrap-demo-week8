@@ -1,370 +1,412 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="">
-  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
-  <meta name="generator" content="Hugo 0.72.0">
-  <title>Carousel Template · Bootstrap</title>
-
-  <link rel="canonical" href="https://v5.getbootstrap.com/docs/5.0/examples/carousel/">
-
-
-
-  <!-- Bootstrap core CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
-    integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
-    integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-    crossorigin="anonymous"></script>
-
-  <style>
-    .bd-placeholder-img {
-      font-size: 1.125rem;
-      text-anchor: middle;
-      -webkit-user-select: none;
-      -moz-user-select: none;
-      -ms-user-select: none;
-      user-select: none;
-    }
-
-    @media (min-width: 768px) {
-      .bd-placeholder-img-lg {
-        font-size: 3.5rem;
-      }
-    }
-
-    /* GLOBAL STYLES
-    --------------------------------------------- */
-    /* Padding below the footer and lighter body text */
-
-    body {
-      padding-top: 3rem;
-      padding-bottom: 3rem;
-      color: #5a5a5a;
-    }
-
-
-    /* CUSTOMIZE THE CAROUSEL
-    -------------------------------------------- */
-
-    /* Carousel base class */
-    .carousel {
-      margin-bottom: 4rem;
-    }
-
-    /* Since positioning the image, we need to help out the caption */
-    .carousel-caption {
-      bottom: 3rem;
-      z-index: 10;
-    }
-
-    /* Declare heights because of positioning of img element */
-    .carousel-item {
-      height: 32rem;
-    }
-
-    .carousel-item>img {
-      position: absolute;
-      top: 0;
-      left: 0;
-      min-width: 100%;
-      height: 32rem;
-    }
-
-
-    /* MARKETING CONTENT
--------------------------------------------------- */
-
-    /* Center align the text within the three columns below the carousel */
-    .marketing .col-lg-4 {
-      margin-bottom: 1.5rem;
-      text-align: center;
-    }
-
-    .marketing h2 {
-      font-weight: 400;
-    }
-
-    .marketing .col-lg-4 p {
-      margin-right: .75rem;
-      margin-left: .75rem;
-    }
-
-
-    /* Featurettes
-------------------------- */
-
-    .featurette-divider {
-      margin: 5rem 0;
-      /* Space out the Bootstrap <hr> more */
-    }
-
-    /* Thin out the marketing headings */
-    .featurette-heading {
-      font-weight: 300;
-      line-height: 1;
-      letter-spacing: -.05rem;
-    }
-
-
-    /* RESPONSIVE CSS
--------------------------------------------------- */
-
-    @media (min-width: 40em) {
-
-      /* Bump up size of carousel content */
-      .carousel-caption p {
-        margin-bottom: 1.25rem;
-        font-size: 1.25rem;
-        line-height: 1.4;
-      }
-
-      .featurette-heading {
-        font-size: 50px;
-      }
-    }
-
-    @media (min-width: 62em) {
-      .featurette-heading {
-        margin-top: 7rem;
-      }
-    }
-  </style>
-
-
-  <!-- Custom styles for this template -->
-  <link href="carousel.css" rel="stylesheet">
-</head>
-
-<body>
-
-  <header>
-    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Carousel</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
-          aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-          <ul class="navbar-nav mr-auto mb-2 mb-md-0">
-            <li class="nav-item active">
-              <a class="nav-link" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-            </li>
-          </ul>
-          <form class="d-flex">
-            <input class="form-control mr-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
-          </form>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inm320-week8, Bootstrap</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="/public/assets/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+   
+  </head>
+  <body>
+     <div class="wrapper">
+      <aside id="sidebar">
+        <!--content for sidebar-->
+        <div class="sidebar-logo">
+          <a href="#">
+            <i class="bi bi-type-bold"></i>
+            Dashboard Kit</a>
         </div>
-      </div>
-    </nav>
-  </header>
+        <ul class="sidebar-nav">
+          <li class="sidebar-header">
+            <i class="bi bi-radar"></i>
+            Overview
+          </li>
+          <li class="sidebar-item">
+            <a href="#" class="sidebar-link">
+              <i class="bi bi-ticket"></i>
+              Ticket
+            </a>
+          </li>
+          <li class="sidebar-item">
+            <a href="#" class="sidebar-link">
+              <i class="bi bi-lightbulb"></i>
+              Ideas
+            </a>
+          </li>
+          <li class="sidebar-item">
+            <a href="#" class="sidebar-link">
+              <i class="bi bi-telephone"></i>
+              Contacts
+            </a>
+          </li>
+          <li class="sidebar-item">
+            <a href="#" class="sidebar-link">
+              <i class="bi bi-people"></i>
+              Agents
+            </a>
+          </li>
+          <li class="sidebar-item">
+            <a href="#" class="sidebar-link">
+              <i class="bi bi-pencil-square"></i>
+              Articles
+            </a>
+            <hr>
+          </li>
+          <li class="sidebar-item">
+            <a href="#" class="sidebar-link">
+              <i class="bi bi-gear"></i>
+              Setting
+            </a>
+          </li>
+          <li class="sidebar-item">
+            <a href="#" class="sidebar-link">
+              <i class="bi bi-tags"></i>
+              Subscribtion
+            </a>
+          </li>
+        </ul>
+      </aside>
+      <div class="main">
+        <nav class="navbar navbar-expand px-3 border-bottom">
+          <button class="btn" id="sidebar-toggler" type="button">
+            <span class="navbar-toggler-icon">.</span>
+          </button>
+        </nav>
+  
+  
+  <!------Overview-------->
+ 
 
-  <main>
-
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
-      <ol class="carousel-indicators">
-        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-        <li data-target="#myCarousel" data-slide-to="1"></li>
-        <li data-target="#myCarousel" data-slide-to="2"></li>
-      </ol>
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
-            preserveAspectRatio="xMidYMid slice" role="img" focusable="false">
-            <rect width="100%" height="100%" fill="#777" /></svg>
-
-          <div class="container">
-            <div class="carousel-caption text-left">
-              <h1>Example headline.</h1>
-              <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget
-                metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-              <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
-            </div>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
-            preserveAspectRatio="xMidYMid slice" role="img" focusable="false">
-            <rect width="100%" height="100%" fill="#777" /></svg>
-
-          <div class="container">
-            <div class="carousel-caption">
-              <h1>Another example headline.</h1>
-              <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget
-                metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-              <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
-            </div>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
-            preserveAspectRatio="xMidYMid slice" role="img" focusable="false">
-            <rect width="100%" height="100%" fill="#777" /></svg>
-
-          <div class="container">
-            <div class="carousel-caption text-right">
-              <h1>One more for good measure.</h1>
-              <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget
-                metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-              <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
-            </div>
+  <div class="container-text">
+    <div class="input-group mb-3">
+      <div class="container-overview">
+        <div class="row">
+          <div class="col-lg-6">
+            <p class="text-end">overview</p>
           </div>
         </div>
       </div>
-      <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </a>
+      <input type="text" class="form-control" placeholder="Enter text" aria-label="Enter text" aria-describedby="basic-addon2">
+      <span class="input-group-text" id="basic-addon2"><i class="bi bi-search">  </i><i class="bi bi-bell"></i></span>
+      <div class="name" class="">
+        <p class="text-end">Jones Ferdinand</p>
+      </div>
+      <div class="img">
+        <div class="row">
+          <div class="">
+            <img src="/public/assets/images/profile 1.png" class="img-fluid float-end" alt="Image">
+          </div>
+        </div>
+      </div>
     </div>
+  </div>
 
-
-    <!-- Marketing messaging and featurettes
-  ================================================== -->
-    <!-- Wrap the rest of the page in another container to center all the content. -->
-
-    <div class="container marketing">
-
-      <!-- Three columns of text below the carousel -->
-      <div class="row">
-        <div class="col-lg-4">
-          <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg"
-            aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" role="img" focusable="false">
-            <title>Placeholder</title>
-            <rect width="100%" height="100%" fill="#777" /><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text>
-          </svg>
-
-          <h2>Heading</h2>
-          <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies
-            vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus
-            magna.</p>
-          <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
-        </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4">
-          <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg"
-            aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" role="img" focusable="false">
-            <title>Placeholder</title>
-            <rect width="100%" height="100%" fill="#777" /><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text>
-          </svg>
-
-          <h2>Heading</h2>
-          <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras
-            mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris
-            condimentum nibh.</p>
-          <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
-        </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4">
-          <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg"
-            aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" role="img" focusable="false">
-            <title>Placeholder</title>
-            <rect width="100%" height="100%" fill="#777" /><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text>
-          </svg>
-
-          <h2>Heading</h2>
-          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta
-            felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum
-            massa justo sit amet risus.</p>
-          <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
-        </div><!-- /.col-lg-4 -->
-      </div><!-- /.row -->
-
-
-      <!-- START THE FEATURETTES -->
-
-      <hr class="featurette-divider">
-
-      <div class="row featurette">
-        <div class="col-md-7">
-          <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It’ll blow your mind.</span>
-          </h2>
-          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod
-            semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus
-            commodo.</p>
-        </div>
-        <div class="col-md-5">
-          <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
-            height="500" xmlns="http://www.w3.org/2000/svg" aria-label="Placeholder: 500x500"
-            preserveAspectRatio="xMidYMid slice" role="img" focusable="false">
-            <title>Placeholder</title>
-            <rect width="100%" height="100%" fill="#eee" /><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text>
-          </svg>
-
+      
+  
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3">
+        <div class="dashboard-section">
+          <p>Unresolved</p>
+          <h1  class="text-center">60</h1>
         </div>
       </div>
-
-      <hr class="featurette-divider">
-
-      <div class="row featurette">
-        <div class="col-md-7 order-md-2">
-          <h2 class="featurette-heading">Oh yeah, it’s that good. <span class="text-muted">See for yourself.</span></h2>
-          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod
-            semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus
-            commodo.</p>
-        </div>
-        <div class="col-md-5 order-md-1">
-          <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
-            height="500" xmlns="http://www.w3.org/2000/svg" aria-label="Placeholder: 500x500"
-            preserveAspectRatio="xMidYMid slice" role="img" focusable="false">
-            <title>Placeholder</title>
-            <rect width="100%" height="100%" fill="#eee" /><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text>
-          </svg>
-
+      <div class="col-lg-3">
+        <div class="dashboard-section">
+          <p>Overdue</p>
+          <h1  class="text-center">16</h1>
         </div>
       </div>
-
-      <hr class="featurette-divider">
-
-      <div class="row featurette">
-        <div class="col-md-7">
-          <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
-          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod
-            semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus
-            commodo.</p>
-        </div>
-        <div class="col-md-5">
-          <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
-            height="500" xmlns="http://www.w3.org/2000/svg" aria-label="Placeholder: 500x500"
-            preserveAspectRatio="xMidYMid slice" role="img" focusable="false">
-            <title>Placeholder</title>
-            <rect width="100%" height="100%" fill="#eee" /><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text>
-          </svg>
-
+      <div class="col-lg-3 ">
+        <div class="dashboard-section text-primary">
+          <p>Open</p>
+          <h1  class="text-center">43</h1>
         </div>
       </div>
+      <div class="col-lg-3">
+        <div class="dashboard-section">
+          <p>On hold</p>
+          <h1  class="text-center">64</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="Today-trends">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <img src="/public/assets/images/Today trends.png"  alt="Image">
+      </div>
+    </div>
+  </div>
 
-      <hr class="featurette-divider">
+  <!--Tickets and tasks-->
+ <div class="Tickets-and-tasks">
+  <div class="Today-trends">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <img src="/public/assets/images/Tickets and tasks.png"  alt="Image">
+      </div>
+    </div>
+</div>
+   </div>
+  </div>
+</section>
+   </div>
+    </div>
+  
+  
+  
+  
+  
+  
+  
+  
+     <br>
+     <br>
+     <br>
+     <br>
+     <br>
+  
+     <div class="wrapper">
+      <aside id="sidebar">
+        <!--content for sidebar-->
+        <div class="sidebar-logo">
+          <a href="#">
+            <i class="bi bi-type-bold"></i>
+            Dashboard Kit</a>
+        </div>
+        <ul class="sidebar-nav">
+          <li class="sidebar-header">
+            <i class="bi bi-radar"></i>
+            Overview
+          </li>
+          <li class="sidebar-item">
+            <a href="#" class="sidebar-link">
+              <i class="bi bi-ticket"></i>
+              Ticket
+            </a>
+          </li>
+          <li class="sidebar-item">
+            <a href="#" class="sidebar-link">
+              <i class="bi bi-lightbulb"></i>
+              Ideas
+            </a>
+          </li>
+          <li class="sidebar-item">
+            <a href="#" class="sidebar-link">
+              <i class="bi bi-telephone"></i>
+              Contacts
+            </a>
+          </li>
+          <li class="sidebar-item">
+            <a href="#" class="sidebar-link">
+              <i class="bi bi-people"></i>
+              Agents
+            </a>
+          </li>
+          <li class="sidebar-item">
+            <a href="#" class="sidebar-link">
+              <i class="bi bi-pencil-square"></i>
+              Articles
+            </a>
+            <hr>
+          </li>
+          <li class="sidebar-item">
+            <a href="#" class="sidebar-link">
+              <i class="bi bi-gear"></i>
+              Setting
+            </a>
+          </li>
+          <li class="sidebar-item">
+            <a href="#" class="sidebar-link">
+              <i class="bi bi-tags"></i>
+              Subscribtion
+            </a>
+          </li>
+        </ul>
+      </aside>
+      <div class="main">
+        <nav class="navbar navbar-expand px-3 border-bottom">
+          <button class="btn" id="sidebar-toggler" type="button">
+            <span class="navbar-toggler-icon">.</span>
+          </button>
+        </nav>
+  
+       
+        
+  
+  <!------overview-------->
+  <div class="container-text2" class="fixed-top">
+    <p class="title-tickets">tickets</p>
+    <div class="input-group mb-3">
+      <input type="text" class="form-control" placeholder="Enter text" aria-label="Enter text" aria-describedby="basic-addon2">
+      <span class="input-group-text" id="basic-addon2"><i class="bi bi-search">  </i><i class="bi bi-bell"></i></span>
+      <div class="name" class="">
+        <p class="text-end">Jones Ferdinand</p>
+      </div>
+      <div class="img">
+        <div class="row">
+          <div class="">
+            <img src="/public/assets/images/profile 1.png" class="img-fluid float-end" alt="Image">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+   <!---table Element--->
+   
+   <div class="container">
+    <table id="example" class="table table-borded">
+      <thead>
+        <tr>
+          <th>
+            <header class="table-header1">
+              <h2 class="table-sizing">All tickets</h2>
+              <p>     </p>
+             </header>
+          </th>
+          <th> <header class="table-header1">
+            <h2></h2>
+            <p>Ticket detals</p>
+          </th>
+          <th><header class="table-header1">
+            <h2></h2>
+            <p>Customer name</p></th>
+          <th>
+            <header class="table-header1">
+              <h2></h2>
+              <p>Date</p>
+            </th>
+          <th><header class="table-header1">
+            <h2></h2>
+            <p>Priority</p>
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td  class="table-img"><img src="/public/assets/images/1.png" alt=""></td>
+          <td><h3 class="ticket-conetnt1">Contact Email not Linked</h3>
+            <p class="ticket-conetnt2">Updated 1 day ago</p>
+          </td>
+          <td><h3 class="ticket-conetnt1">Tom Cruise</h3>
+          <p class="ticket-conetnt2">on 24.05.2019</p>
+        </td>
+          <td><h3 class="ticket-conetnt1">May 26, 2019</h3>
+            <p class="ticket-conetnt2">6:30 PM</p>
+          </td>
+          <td class="table-button"><button type="button" class="btn btn-danger">High</button></td>
+        </tr>
 
-      <!-- /END THE FEATURETTES -->
+        <tr>
+          <td  class="table-img"><img src="/public/assets/images/2.png" alt=""></td>
+          <td><h3 class="ticket-conetnt1">Adding Images to Featured Posts</h3>
+            <p class="ticket-conetnt2">Updated 1 day ago</p>
+          </td>
+          <td><h3 class="ticket-conetnt1">Matt Damon</h3>
+          <p class="ticket-conetnt2">on 24.05.2019</p>
+        </td>
+          <td><h3 class="ticket-conetnt1">May 26, 2019</h3>
+            <p class="ticket-conetnt2">8:00 AM</p>
+          </td>
+          <td class="table-button"><button type="button" class="btn btn-warning">Low</button></td>
+        </tr>
+        <tr>
+          <td  class="table-img"><img src="/public/assets/images/3.png" alt=""></td>
+          <td><h3 class="ticket-conetnt1">When will I be charged this month?</h3>
+            <p class="ticket-conetnt2">Updated 1 day ago</p>
+          </td>
+          <td><h3 class="ticket-conetnt1">Robert Downey</h3>
+          <p class="ticket-conetnt2">on 24.05.2019</p>
+        </td>
+          <td><h3 class="ticket-conetnt1">May 26, 2019</h3>
+            <p class="ticket-conetnt2">7:30 PM</p>
+          </td>
+          <td class="table-button"><button type="button" class="btn btn-danger">High</button></td>
+        </tr>
+        <tr>
+          <td  class="table-img"><img src="/public/assets/images/4.png" alt=""></td>
+          <td><h3 class="ticket-conetnt1">Payment not going through</h3>
+            <p class="ticket-conetnt2">Updated 2 days ago</p>
+          </td>
+          <td><h3 class="ticket-conetnt1">Christian Bale</h3>
+          <p class="ticket-conetnt2">on 24.05.2019</p>
+        </td>
+          <td><h3 class="ticket-conetnt1">May 25, 2019</h3>
+            <p class="ticket-conetnt2">5:00 PM</p>
+          </td>
+          <td class="table-button"><button type="button" class="btn btn-success">Normal</button></td>
+        </tr>
+        <tr>
+          <td  class="table-img"><img src="/public/assets/images/5.png" alt=""></td>
+          <td><h3 class="ticket-conetnt1">Unable to add replies</h3>
+            <p class="ticket-conetnt2">Updated 2 days ago</p>
+          </td>
+          <td><h3 class="ticket-conetnt1">Henry Cavil</h3>
+          <p class="ticket-conetnt2">on 24.05.2019</p>
+        </td>
+          <td><h3 class="ticket-conetnt1">May 24, 2019</h3>
+            <p class="ticket-conetnt2">4:00 PM</p>
+          </td>
+          <td class="table-button"><button type="button" class="btn btn-danger">High</button></td>
+        </tr>
+        <tr>
+          <td  class="table-img"><img src="/public/assets/images/6.png" alt=""></td>
+          <td><h3 class="ticket-conetnt1">Downtime since last week</h3>
+            <p class="ticket-conetnt2">Updated 3 days ago</p>
+          </td>
+          <td><h3 class="ticket-conetnt1">Chris Evans</h3>
+          <p class="ticket-conetnt2">on 23.05.2019</p>
+        </td>
+          <td><h3 class="ticket-conetnt1">May 24, 2019</h3>
+            <p class="ticket-conetnt2">2:00 PM</p>
+          </td>
+          <td class="table-button"><button type="button" class="btn btn-success">Normal</button></td>
+        </tr>
+        <tr>
+          <td  class="table-img"><img src="/public/assets/images/7.png" alt=""></td>
+          <td><h3 class="ticket-conetnt1">Downtime since last week</h3>
+            <p class="ticket-conetnt2">Updated 4 days ago</p>
+          </td>
+          <td><h3 class="ticket-conetnt1">Sam simth</h3>
+          <p class="ticket-conetnt2">on 22.05.2019</p>
+        </td>
+          <td><h3 class="ticket-conetnt1">May 25, 2019</h3>
+            <p class="ticket-conetnt2">11:30 aM</p>
+          </td>
+          <td class="table-button"><button type="button" class="btn btn-warning">Low</button></td>
+        </tr>
+        <tr>
+          <td  class="table-img"><img src="/public/assets/images/8.png" alt=""></td>
+          <td><h3 class="ticket-conetnt1">How do I change my password?</h3>
+            <p class="ticket-conetnt2">Updated 6 days ago</p>
+          </td>
+          <td><h3 class="ticket-conetnt1">Steve Rogers</h3>
+          <p class="ticket-conetnt2">on 21.05.2019</p>
+        </td>
+          <td><h3 class="ticket-conetnt1">May 24, 2019</h3>
+            <p class="ticket-conetnt2">1:00 pM</p>
+          </td>
+          <td class="table-button"><button type="button" class="btn btn-success">Normal</button></td>
+        </tr>
+        <tr>
+          
+      </tbody>
+    </table>
 
-    </div><!-- /.container -->
-
-
-    <!-- FOOTER -->
-    <footer class="container">
-      <p class="float-right"><a href="#">Back to top</a></p>
-      <p>&copy; 2017-2020 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
-    </footer>
-  </main>
 
 
 
-</body>
-
-</html>
+  </div>
+  
+  
+          
+     </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+  </body>
+  </html>
